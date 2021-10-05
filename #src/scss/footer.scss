@@ -1,5 +1,96 @@
-footer {
+.footer {
+  background-color: #949393;
+  
+  &__container {
+  }
+  
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+  }
+  
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &:first-child{
+      margin-bottom: 40px;
+    }
+  }
+  
+  &__menu {
+    display: flex;
+    
+    li {
+      margin-right: 17px;
+    }
+  }
+  
+  &__menu-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    transition: all 0.3s ease 0s;
+    
+    
+    &._active{
+      color: white;
+    }
+    @media (any-hover: hover){
+      &:hover{
+        color: white;
+      }
+    }
+  }
+  
+  &__tel {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: white;
+    @media (any-hover: hover){
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  &__copyright {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #626262;
+  }
+  
+  &__socials {
+    display: flex;
+    li{
+      margin-right: 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  
+  &__socials-item {
+    background-color: white;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        background-color: #bbbbbb;
+      }
+    }
+  }
 }
-//====================================================================================================
-
-//====================================================================================================

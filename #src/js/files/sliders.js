@@ -61,23 +61,23 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let slider_about = new Swiper('.about__slider', {
-	/*
-	effect: 'fade',
+let slider_about = new Swiper('.brands__slider', {
+
+	// effect: 'fade',
 	autoplay: {
-		delay: 3000,
+		delay: 2000,
 		disableOnInteraction: false,
 	},
-	*/
+
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0,
+	slidesPerView: 5,
+	spaceBetween: 40,
 	autoHeight: true,
 	speed: 800,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	//loop: true,
+	loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
@@ -87,8 +87,8 @@ let slider_about = new Swiper('.about__slider', {
 	//},
 	// Arrows
 	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+		nextEl: '.brands__slider-next',
+		prevEl: '.brands__slider-prev',
 	},
 	/*
 	breakpoints: {
