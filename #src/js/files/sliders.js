@@ -121,3 +121,58 @@ let slider_about = new Swiper('.brands__slider', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+let slider_advantages = new Swiper('.advantages__slider', {
+
+	// effect: 'fade',
+	// autoplay: {
+	// 	delay: 2000,
+	// 	disableOnInteraction: false,
+	// },
+
+	observer: true,
+	observeParents: true,
+	slidesPerView: 3,
+	spaceBetween: 20,
+	autoHeight: true,
+	speed: 800,
+	centeredSlides: true,
+	initialSlide: 1,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	// loop: true,
+	//preloadImages: false,
+	//lazy: true,
+
+	// Dotts
+	//pagination: {
+	//	el: '.slider-quality__pagging',
+	//	clickable: true,
+	//},
+
+	// Arrows
+	// navigation: {
+	// 	nextEl: '.brands__slider-next',
+	// 	prevEl: '.brands__slider-prev',
+	// },
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			autoHeight: true,
+		},
+		1180: {
+			slidesPerView: 3,
+			spaceBetween: 10,
+		},
+	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
