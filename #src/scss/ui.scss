@@ -6,6 +6,7 @@
   line-height: 130%;
   color: #000000;
   position: relative;
+  text-transform: uppercase;
   
   &:after {
     content: '';
@@ -39,6 +40,38 @@
   }
 }
 
+._topLine {
+  position: relative;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+    
+    background-color: #000000;
+  }
+  
+  &.menu__link._active {
+    &:before {
+      background-color: red;
+    }
+  }
+  
+  @media (any-hover: hover) {
+    &:hover {
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
@@ -300,6 +333,26 @@ body.ie {
 
 .swiper-button-lock {
   display: none !important;
+}
+
+.swiper-pagination-bullet {
+  border: 1px solid #636363;
+  box-sizing: border-box;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+  
+  &:focus, &:active {
+    outline: none;
+    box-shadow: 1px 1px 21px #636363;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #636363;
 }
 
 //====================================================================================================

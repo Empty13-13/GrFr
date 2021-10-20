@@ -20,17 +20,17 @@
 
         <div class="header__items">
           <a href="tel:+41447343330" class="info-header__tel-btn tel-btn info-header__item">
-            <img class="tel-btn__img" src="img/icons/phone.svg" alt="">
+            <img class="tel-btn__img" src="img/icons/phone.png" alt="">
             <p class="tel-btn__text">+41 44 734 33 30</p>
           </a>
           <a href="mailto:info@kdt-technik.ch" class="info-header__email-btn email-btn info-header__item">
             <img class="email-btn__img" src="img/icons/mail.png" alt="">
             <p class="email-btn__text">info@kdt-technik.ch</p>
           </a>
-          <a href="" class="info-header__lang lang-info info-header__item">
+          <div class="info-header__lang lang-info info-header__item">
             <img class="lang-info__img" src="img/icons/lang.svg" alt="">
-            <p class="lang-info__text"><span>De</span>/<span>Fr</span></p>
-          </a>
+            <p class="lang-info__text"><a class="_lang _topLine _active">De</a>/<a class="_lang _topLine">Fr</a></p>
+          </div>
         </div>
       </div>
 
@@ -41,30 +41,33 @@
           <span></span>
         </div>
         <nav class="menu__body">
-          <ul class="menu__list">
-            <li><a href="" class="menu__link _active">Shop</a></li>
-            <li><a href="" class="menu__link">Unternehmen</a></li>
-            <!--            <li><a href="" class="menu__link _arrow">Technopool</a>-->
-            <!--              <div class="menu__sub-menu sub-menu">-->
-            <!--                <div class="sub-menu__body">-->
-            <!--                  <ul class="sub-menu__list">-->
-            <!--                    <li><a class="sub-menu__list-item" href="">ZERTIFIZIERUNG</a></li>-->
-            <!--                    <li><a class="sub-menu__list-item _active" href="">FACHAUSBILDUNG</a></li>-->
-            <!--                    <li><a class="sub-menu__list-item" href="">PROTOTYPEN</a></li>-->
-            <!--                    <li><a class="sub-menu__list-item _tools-icon" href="">WERKZEUGSERVICE</a></li>-->
-            <!--                  </ul>-->
-            <!--                  <div class="sub-menu__footer footer-sub-menu">-->
-            <!--                    <ul class="footer-sub-menu__list">-->
-            <!--                      <li><a href="" class="footer-sub-menu__item">CUSTOMER PERFORMANCE</a></li>-->
-            <!--                      <li><a href="" class="footer-sub-menu__item">Expertise bestellen</a></li>-->
-            <!--                    </ul>-->
-            <!--                  </div>-->
-            <!--                </div>-->
-            <!--              </div>-->
-            <!--            </li>-->
-            <li><a href="" class="menu__link">Häufige fragen</a>
+          <ul data-spollers="768,max" class="menu__list">
+            <li><a href="" class="menu__link _active _topLine">Shop</a></li>
+            <li><a href="" class="menu__link _topLine">Unternehmen</a></li>
+            <li>
+              <a data-spoller href="" class="menu__link _arrow _error _topLine">Technopool</a>
+              <div class="menu__sub-menu sub-menu">
+                <div class="sub-menu__body">
+                  <p class="sub-menu__error">Dieser Bereich befindet sich in Bearbeitung</p>
+<!--                  <ul class="sub-menu__list">-->
+<!--                    <li><a class="sub-menu__list-item" href="">ZERTIFIZIERUNG</a></li>-->
+<!--                    <li><a class="sub-menu__list-item _active" href="">FACHAUSBILDUNG</a></li>-->
+<!--                    <li><a class="sub-menu__list-item" href="">PROTOTYPEN</a></li>-->
+<!--                    <li><a class="sub-menu__list-item _tools-icon" href="">WERKZEUGSERVICE</a></li>-->
+<!--                  </ul>-->
+<!--                  <div class="sub-menu__footer footer-sub-menu">-->
+<!--                    <ul class="footer-sub-menu__list">-->
+<!--                      <li><a href="" class="footer-sub-menu__item">CUSTOMER PERFORMANCE</a></li>-->
+<!--                      <li><a href="" class="footer-sub-menu__item">Expertise bestellen</a></li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+                </div>
+              </div>
             </li>
-            <li><a href="" class="menu__link _arrow">Sortiment nach Marken</a>
+            <li><a href="" class="menu__link _topLine">Häufige fragen</a>
+            </li>
+            <li>
+              <a data-spoller class="menu__link _arrow _topLine">Sortiment nach Marken</a>
               <div class="menu__sub-menu sub-menu">
                 <div class="sub-menu__body">
                   <ul class="sub-menu__list">
@@ -87,11 +90,10 @@
                 </div>
               </div>
             </li>
-            <li><a href="" class="menu__link">Werkzeugservice</a></li>
+            <li><a href="" class="menu__link _topLine">Werkzeugservice</a></li>
           </ul>
         </nav>
       </div>
-      <img class="main__back-logo" src="img/main/LogoBG.svg" alt="">
 
     </div>
   </div>
@@ -108,12 +110,14 @@
             </div>
 
             <h1 class="main__title _title _three">Qualifiziert. Zertifiziert. Kleben
-              <img class="main__back-woman" src="img/main/bg.png" alt="">
+              <img data-da=".advantages,768,last" class="main__back-woman" src="img/main/bg.png" alt="">
             </h1>
           </div>
           <div class="main__back">
           </div>
         </div>
+        <img class="main__back-logo" src="img/main/LogoBG.svg" alt="">
+
       </div>
     </div>
 
@@ -124,8 +128,8 @@
             <div class="advantages__block block-advantages _slide">
               <div class="block-advantages__body">
                 <div class="block-advantages__top">
-                  <div class="block-advantages__title">
-                    >24
+                  <div class="block-advantages__title _car">
+                    <p><</p>24
                     <img class="block-advantages__img _car" src="img/main/advantages/icon1.png" alt="">
                     <span class="block-advantages__text-description">Stunden</span>
                   </div>
@@ -174,7 +178,7 @@
             <div class="advantages__block block-advantages _slide">
               <div class="block-advantages__body">
                 <div class="block-advantages__top">
-                  <div class="block-advantages__title">
+                  <div class="block-advantages__title _product">
                     1000+
                     <img class="block-advantages__img _product" src="img/main/advantages/icon3.png" alt="">
                     <span class="block-advantages__text-description">Produkte</span>
@@ -196,6 +200,7 @@
               </div>
             </div>
           </div>
+          <div class="advantages__pagination"></div>
         </div>
       </div>
     </div>
@@ -306,19 +311,18 @@
           <li><a href="" class="footer__menu-item _active">SHOP</a></li>
           <li><a href="" class="footer__menu-item">UNTERNEHMEN</a></li>
           <li><a href="" class="footer__menu-item">TECHNOPOOL</a></li>
-          <li><a href="" class="footer__menu-item">HÄUFIGE FRAGEN</a></li>
         </ul>
         <a href="tel:+41 44 743 33 33" class="footer__tel">+41 44 743 33 33</a>
       </div>
       <div class="footer__row">
+<!--        <ul class="footer__socials">-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/in.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/twitter.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/youtube.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/x.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/facebook.svg" alt=""></a></li>-->
+<!--        </ul>-->
         <div class="footer__copyright">© 2021 KDT-AG</div>
-        <ul class="footer__socials">
-          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/in.svg" alt=""></a></li>
-          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/twitter.svg" alt=""></a></li>
-          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/youtube.svg" alt=""></a></li>
-          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/x.svg" alt=""></a></li>
-          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/facebook.svg" alt=""></a></li>
-        </ul>
       </div>
     </div>
 	</div>

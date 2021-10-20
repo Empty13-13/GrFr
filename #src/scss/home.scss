@@ -80,6 +80,14 @@
     max-width: 430px;
     margin-bottom: 317px;
     position: relative;
+    
+    @media (max-width:$md3+px){
+      margin-bottom: 250px;
+    }
+    
+    @media (max-width:$md4+px){
+      margin-bottom: 200px;
+    }
   }
   
   &__back {
@@ -104,11 +112,13 @@
   
   &__back-logo {
     position: absolute;
-    top: 0;
+    top: -280px;
     right: 0;
     z-index: -1;
     
-    
+    @media (max-width:1000px){
+      display: none;
+    }
   }
   
   &__back-woman {
@@ -117,15 +127,28 @@
     
     @include adaptiv-value('top',-76,100,1);
     @include adaptiv-value('width',1270,-300,1);
-  
-    left: 61%;
+    left: 65%;
   
   
     @media (max-width:1000px){
       width: 810px;
-      top: 34%;
-      left: 55%;
+      @include adaptiv-value('top',34,36,1);
+      @include adaptiv-value('width',810,500,1);
+      @include adaptiv-value('top',55,90,1);
     }
+    @media (max-width:$md3+px){
+      width: 670px;
+      top: auto;
+      bottom: 91%;
+      left: auto;
+      right: 0;
+      @include adaptiv-value('width',670,286,1);
+    }
+    //@media (max-width:$md4+px){
+    //  width: 520px;
+    //  top: 76%;
+    //  left: 8%;
+    //}
   }
   
   &__btn{
@@ -148,6 +171,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    
     min-width: 0;
     
   }
@@ -160,8 +185,14 @@
       margin: 0 auto;
       overflow: visible;
     }
+    @media (max-width:$md4+px){
+      max-width: 280px;
+    }
   }
   
+  &__pagination {
+    display: flex;
+  }
 }
 
 .block-advantages {
@@ -198,6 +229,11 @@
   }
   
   &__body {
+    position: relative;
+    //min-width: 380px;
+    @media (max-width:$md4+px){
+      height: 47%;
+    }
   }
   
   &__top {
@@ -206,6 +242,13 @@
     align-items: center;
     flex-direction: column;
     padding: 40px 30px;
+    height: 270px;
+    width: 100%;
+    
+    @media (max-width:$md4+px){
+      padding: 30px 10px 30px 10px;
+      height: 270px;
+    }
   }
   
   &__title {
@@ -214,6 +257,22 @@
     position: relative;
     display: inline-flex;
     flex-direction: column;
+    
+    &._product {
+      @media (max-width:$md4+px){
+        font-size: 80px;
+      }
+    }
+    
+    &._car {
+      p {
+        font-size: 70px;
+        position: absolute;
+        right: calc(100% + 5px);
+        top: 15px;
+        
+      }
+    }
   }
   
   .block-advantages__img {
@@ -222,6 +281,12 @@
     &._car {
       top: 33%;
       left: 83%;
+      
+      @media (max-width:$md4+px){
+        top: 50%;
+        left: 86%;
+        width: 41%;
+      }
     }
     
     &._product {
@@ -241,6 +306,13 @@
   &__bottom {
     background: #E52713;
     padding: 20px 30px;
+    
+    @media (max-width:$md4+px){
+      height: 100%;
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+    }
   }
   
   &__list {
@@ -278,6 +350,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    @media (max-width:$md4+px){
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   
   &__column {
@@ -285,6 +362,25 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
+    @media (max-width:$md3+px){
+      &:first-child{
+        flex: 0 0 60%;
+      }
+      &:last-child{
+        flex: 0 0 40%;
+        align-items: flex-end;
+        margin-top: auto;
+      }
+    }
+    @media (max-width:$md4+px){
+      &:first-child{
+        flex: 1 1 auto;
+      }
+      &:last-child{
+        flex: 1 1 auto;
+      }
+    }
   }
   
   &__img-block {
@@ -294,11 +390,14 @@
   &__img {
     display: flex;
     margin-left: auto;
+    
+    @media (max-width:$md3+px){
+      max-width: 100%;
+    }
   }
 }
 
 .texts-pow {
-  
   
   &__description-title {
     font-style: normal;
@@ -307,6 +406,10 @@
     line-height: 48px;
     color: #000000;
     
+    @media (max-width:$md4+px){
+      font-size: 23px;
+      line-height: 35px;
+    }
   }
   
   & > span {
@@ -317,6 +420,12 @@
     color: #000000;
     margin-bottom: 21px;
     display: flex;
+    
+    @media (max-width:$md4+px){
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
   
   &__list-description {
@@ -343,6 +452,11 @@
       margin-right: 13px;
       width: 21px;
       object-fit: contain;
+    }
+    
+    @media (max-width:$md4+px){
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 }

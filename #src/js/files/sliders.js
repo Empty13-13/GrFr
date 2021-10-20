@@ -90,7 +90,6 @@ let slider_about = new Swiper('.brands__slider', {
 		nextEl: '.brands__slider-next',
 		prevEl: '.brands__slider-prev',
 	},
-	/*
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -105,12 +104,12 @@ let slider_about = new Swiper('.brands__slider', {
 			slidesPerView: 3,
 			spaceBetween: 20,
 		},
-		1268: {
+		1230: {
 			slidesPerView: 4,
 			spaceBetween: 30,
 		},
 	},
-	*/
+
 	on: {
 		lazyImageReady: function () {
 			ibg();
@@ -138,6 +137,7 @@ let slider_advantages = new Swiper('.advantages__slider', {
 	speed: 800,
 	centeredSlides: true,
 	initialSlide: 1,
+	width: 1180,
 	//touchRatio: 0,
 	//simulateTouch: false,
 	// loop: true,
@@ -159,7 +159,24 @@ let slider_advantages = new Swiper('.advantages__slider', {
 		320: {
 			slidesPerView: 1,
 			spaceBetween: 20,
+			width: 280,
+			autoHeight: false,
+
+			pagination: {
+				el: '.advantages__pagination',
+				clickable: true,
+			}
+		},
+		479: {
+			slidesPerView: 1,
+			spaceBetween: 20,
 			autoHeight: true,
+			width: 380,
+
+			pagination: {
+				el: '.advantages__pagination',
+				clickable: true,
+			}
 		},
 		1180: {
 			slidesPerView: 3,
