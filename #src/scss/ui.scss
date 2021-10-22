@@ -73,6 +73,44 @@
   }
 }
 
+._back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    width: 1920px;
+    height: 300%;
+    left: -200px;
+    top: -100%;
+    background: linear-gradient(270deg, #000000 -12.12%, rgba(196, 196, 196, 0) 86.94%);
+    z-index: -1;
+  }
+}
+._whiteBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    width: 2920px;
+    height: 300%;
+    left: -200px;
+    top: -100%;
+    background: linear-gradient(270deg, #000000 -12.12%, rgba(196, 196, 196, 0) 86.94%);
+    z-index: -1;
+  }
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
@@ -294,7 +332,6 @@ body.ie {
 
 //====================================================================================================
 ._swiper {
-  overflow: hidden;
   //.swiper-wrapper
   .swiper-wrapper {
     width: 100%;

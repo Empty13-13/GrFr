@@ -180,7 +180,10 @@ let slider_advantages = new Swiper('.advantages__slider', {
 		},
 		1180: {
 			slidesPerView: 3,
+			slidesPerGroup: 3,
 			spaceBetween: 10,
+			centeredSlides: false,
+
 		},
 	},
 	on: {

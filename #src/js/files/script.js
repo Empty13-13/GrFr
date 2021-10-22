@@ -7,3 +7,4 @@ lang.forEach(item => {
     item.classList.add('_active')
   })
 })
+
