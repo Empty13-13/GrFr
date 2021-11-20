@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+ <head>
+	<title>Form</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+  <div class="header__container _container">
+    <div class="header__body">
+      <div class="header__info info-header">
+        <a href="../" class="header__logo"><img src="img/icons/logo.svg" alt=""/></a>
+
+        <div class="header__items">
+          <a href="tel:+41447343330" class="info-header__tel-btn tel-btn info-header__item">
+            <img class="tel-btn__img" src="img/icons/phone.png" alt="">
+            <p class="tel-btn__text">+41 44 734 33 30</p>
+          </a>
+          <a href="mailto:info@kdt-technik.ch" class="info-header__email-btn email-btn info-header__item">
+            <img class="email-btn__img" src="img/icons/mail.png" alt="">
+            <p class="email-btn__text">info@kdt-technik.ch</p>
+          </a>
+          <div class="info-header__lang lang-info info-header__item">
+            <img class="lang-info__img" src="img/icons/lang.svg" alt="">
+            <p class="lang-info__text"><a class="_lang _topLine _active">De</a>/<a class="_lang _topLine">Fr</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__menu menu">
+        <div class="menu__icon icon-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu__body">
+          <ul data-spollers="768,max" class="menu__list">
+            <li><a href="" class="menu__link _active _topLine">Shop</a></li>
+            <li><a href="history.html" class="menu__link _topLine">Unternehmen</a></li>
+            <li>
+              <a data-spoller href="" class="menu__link _arrow _error _topLine">Technopool</a>
+              <div class="menu__sub-menu sub-menu">
+                <div class="sub-menu__body">
+                  <p class="sub-menu__error">Dieser Bereich befindet sich in Bearbeitung</p>
+<!--                  <ul class="sub-menu__list">-->
+<!--                    <li><a class="sub-menu__list-item" href="">ZERTIFIZIERUNG</a></li>-->
+<!--                    <li><a class="sub-menu__list-item _active" href="">FACHAUSBILDUNG</a></li>-->
+<!--                    <li><a class="sub-menu__list-item" href="">PROTOTYPEN</a></li>-->
+<!--                    <li><a class="sub-menu__list-item _tools-icon" href="">WERKZEUGSERVICE</a></li>-->
+<!--                  </ul>-->
+<!--                  <div class="sub-menu__footer footer-sub-menu">-->
+<!--                    <ul class="footer-sub-menu__list">-->
+<!--                      <li><a href="" class="footer-sub-menu__item">CUSTOMER PERFORMANCE</a></li>-->
+<!--                      <li><a href="" class="footer-sub-menu__item">Expertise bestellen</a></li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+                </div>
+              </div>
+            </li>
+            <li><a href="question.html" class="menu__link _topLine">Häufige fragen</a>
+            </li>
+            <li>
+              <a data-spoller class="menu__link _arrow _topLine">Sortiment nach Marken</a>
+              <div class="menu__sub-menu sub-menu">
+                <div class="sub-menu__body">
+                  <ul class="sub-menu__list">
+                    <li><a class="sub-menu__list-item" href="">Loctite</a></li>
+                    <li><a class="sub-menu__list-item" href="">Araldite</a></li>
+                    <li><a class="sub-menu__list-item" href="">Kömmerling</a></li>
+                    <li><a class="sub-menu__list-item" href="">3M</a></li>
+                    <li><a class="sub-menu__list-item" href="">KDG</a></li>
+                    <li><a class="sub-menu__list-item" href="">LORD</a></li>
+                    <li><a class="sub-menu__list-item" href="">Scapa</a></li>
+                  </ul>
+                  <!--                  <a href="" class="sub-menu__btn _arrow">Mehr</a>-->
+                </div>
+                <div class="sub-menu__footer footer-sub-menu _red">
+                  <p class="footer-sub-menu__text">Produktberatung anfordern</p>
+                  <div class="footer-sub-menu__socials">
+                    <a href="" class="footer-sub-menu__tel"><img src="img/icons/phone-white.svg" alt=""></a>
+                    <a href="" class="footer-sub-menu__mail"><img src="img/icons/mail-white.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="form.html" class="menu__link _topLine">Werkzeugservice</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+</header>
+  <main class="page">
+
+    <div class="instruments">
+      <div class="instruments__content _container">
+        <div class="instruments__body">
+          <form action="#" class="instruments__form form-instruments">
+            <div class="form-instruments__body">
+              <div class="form-instruments__sex sex">
+                <div class="form_radio">
+                  <input id="radio-1" autocomplete="off" type="radio" name="form[]" data-value=""
+                         class="input sex__radio"/>
+                  <label for="radio-1">
+                    Herr
+                  </label>
+                </div>
+                <div class="form_radio">
+                  <input checked id="radio-2" autocomplete="off" type="radio" name="form[]" data-value=""
+                         class="input sex__radio"/>
+
+                  <label for="radio-2">
+                    Frau
+                  </label>
+                </div>
+              </div>
+              <p class="form-instruments__required">*Pflichtfelder</p>
+              <div class="form-instruments__column">
+                <input autocomplete="off" type="text" name="form[]" data-value="Vorname*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="Nachname*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="Kundennr"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="UNTERNEHMEN*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="E-mail*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="Telefon*"
+                       class="input form-instruments__input"/>
+                <div class="form-instruments__check">
+                  <p class="form-instruments__text-check">Rückruf bestellen</p>
+                  <div class="form-instruments__checkbox"></div>
+                  <input id="checkboxInstruments" autocomplete="off" type="hidden" name=""
+                         class="input form-instruments__input"/>
+                </div>
+
+                <select id="select1">
+                  <option value="Ersatzteile">Ersatzteile</option>
+                  <option value="Retouren">Retouren</option>
+                  <option value="Wartung">Wartung</option>
+                  <option value="Reparatur">Reparatur</option>
+                  <option value="Rechnung">Rechnung</option>
+                  <option value="Reparatur vor Ort">Reparatur vor Ort</option>
+                </select>
+
+              </div>
+              <div class="form-instruments__column">
+                <textarea autocomplete="off" type="text" name="form[]"
+                          data-value="Bitte geben Sie hier den Text Ihrer Mitteilung ein:"
+                          class="input form-instruments__textarea"></textarea>
+                <p class="form-instruments__description">Mit dem Absenden Ihrer Anfrage erklären Sie sich mit der
+                                                         Verarbeitung Ihrer angegebenen Daten ausschliesslich zum Zweck
+                                                         der Bearbeitung Ihrer Anfrage durch KDT AG
+                                                         einverstanden.</p>
+                <button class="form-instruments__btn">Senden</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="downloadGroup">
+          <div class="downloadGroup__title">Download</div>
+          <div class="downloadGroup__body">
+            <a href="#" class="downloadGroup__block block-downloadGroup">
+              <div class="block-downloadGroup__body">
+                <div class="block-downloadGroup__img">
+                  <img class="doc" src="img/instruments/doc.jpg" alt="">
+                  <img class="textdoc" src="img/instruments/textdoc.jpg" alt="">
+                </div>
+                <p class="block-downloadGroup__description">Retourenschein</p>
+              </div>
+            </a>
+            <a href="#" class="downloadGroup__block block-downloadGroup">
+              <div class="block-downloadGroup__body">
+                <div class="block-downloadGroup__img">
+                  <img class="doc" src="img/instruments/doc.jpg" alt="">
+                  <img class="textdoc" src="img/instruments/textdoc.jpg" alt="">
+                </div>
+                <p class="block-downloadGroup__description">Retourenschein</p>
+              </div>
+            </a>
+            <a href="#" class="downloadGroup__block block-downloadGroup">
+              <div class="block-downloadGroup__body">
+                <div class="block-downloadGroup__img">
+                  <img class="doc" src="img/instruments/doc.jpg" alt="">
+                  <img class="textdoc" src="img/instruments/textdoc.jpg" alt="">
+                </div>
+                <p class="block-downloadGroup__description">Retourenschein</p>
+              </div>
+            </a>
+          </div>
+          <div class="downloadGroup__back _whiteBack">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+	<div class="footer__container _container">
+    <div class="footer__body">
+      <div class="footer__row">
+        <ul class="footer__menu">
+          <li><a href="" class="footer__menu-item _active">SHOP</a></li>
+          <li><a href="" class="footer__menu-item">UNTERNEHMEN</a></li>
+          <li><a href="" class="footer__menu-item">TECHNOPOOL</a></li>
+        </ul>
+        <a href="tel:+41 44 743 33 33" class="footer__tel">+41 44 743 33 33</a>
+      </div>
+      <div class="footer__row">
+<!--        <ul class="footer__socials">-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/in.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/twitter.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/youtube.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/x.svg" alt=""></a></li>-->
+<!--          <li><a href="" class="footer__socials-item"><img src="img/icons/socials/facebook.svg" alt=""></a></li>-->
+<!--        </ul>-->
+        <div class="footer__copyright">© 2021 KDT-AG</div>
+      </div>
+    </div>
+	</div>
+</footer>
+</div>
+<!-- Swiper -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

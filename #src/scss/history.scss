@@ -36,14 +36,13 @@
 }
 
 .circle {
-  margin-top: 127px;
-  width: 527px;
-  height: 527px;
+  margin-top: 20px;
+  width: 460px;
+  height: 460px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 1s ease 0s;
-  margin-bottom: 100px;
   
   
   border-radius: 50%;
@@ -51,13 +50,19 @@
   
   &:before {
     content: '';
-    background: url('../img/history/back.png') 0 0 no-repeat;
+    background: url('../img/history/back.svg') 0 0 / contain no-repeat;
     
     position: absolute;
     width: 460px;
     height: 460px;
   }
   
+  
+  &__body {
+    transform: scale(0.7);
+    position: relative;
+    margin-bottom: 60px;
+  }
   
   &__item {
     width: 26px;
@@ -66,64 +71,94 @@
     border-radius: 50%;
     transition: all 0.5s ease 0s;
     position: absolute;
-    cursor: pointer;
-    
-    &._active {
-      background-color: #E52713;
-      
-      div {
-        color: #E52713;
-      }
-    }
-    
+  
     &._1 {
-      bottom: 4%;
-      left: 49%;
+      bottom: -2%;
+      left: 48%;
+      
+      &._active{
+        bottom: -2%;
+        left: 48%;
+      }
+      
     }
     
     &._2 {
-      bottom: 78px;
-      left: 18%;
+      bottom: 43px;
+      left: 16%;
     }
     
     &._3 {
-      bottom: 226px;
-      left: 4.5%;
+      bottom: 178px;
+      left: -1.9%;
     }
     
     &._4 {
-      top: 129px;
-      left: 10.5%;
+      top: 100px;
+      left: 4.5%;
+      &._active{
+        top: 104px;
+        left: 4.5%;
+      }
+      
     }
     
     &._5 {
-      top: 37px;
-      left: 33.5%;
+      top: 5px;
+      left: 30.5%;
+      
+      &._active{
+        top: 12px;
+        left: 28.5%;
+      }
+      
     }
     
     &._6 {
-      top: 37px;
-      right: 33.5%;
+      top: 3px;
+      right: 30.5%;
+      
+      &._active{
+        top: 4px;
+        right: 31.5%;
+      }
+      
     }
     
     &._7 {
-      top: 129px;
-      right: 10.5%;
+      top: 96px;
+      right: 5.5%;
+      
+      &._active{
+        top: 101px;
+        right: 5.5%;
+      }
+      
     }
     
     &._8 {
-      bottom: 226px;
-      right: 4.5%;
+      bottom: 181px;
+      right: -0.9%;
     }
     
     &._9 {
-      bottom: 78px;
-      right: 18%;
+      bottom: 50px;
+      right: 13%;
       background-color: #000000;
       
       div {
         color: #000000;
       }
+      
+      &._active{
+        bottom: 46px;
+        right: 15%;
+        div {
+          bottom: 47px;
+          right: -214%;
+        }
+      }
+      
     }
     
     
@@ -147,37 +182,61 @@
       
       &._1 {
         right: calc(100% + 20px);
+        top: -10px;
       }
       
       &._2 {
         right: calc(100% + 20px);
+        top: -7px;
       }
       
       &._3 {
         right: calc(100% + 20px);
+        top: -10px;
       }
       
       &._4 {
-        bottom: calc(100% + 15px);
+        bottom: calc(100% + 22px);
         left: -133%;
       }
       
       &._5 {
-        bottom: calc(100% + 15px);
+        bottom: calc(100% + 21px);
         left: -133%;
       }
       
       &._6 {
         left: calc(100% + 20px);
+        top: -10px;
       }
       
       &._7 {
         left: calc(100% + 20px);
+        top: -7px;
       }
       
       &._8 {
         left: calc(100% + 20px);
-        
+        top: -10px;
+      }
+    }
+  
+    &._active {
+      background-color: #E52713;
+    
+      div {
+        color: #E52713;
+      }
+    }
+  
+    cursor: pointer;
+  
+    @media (any-hover: hover){
+      &:hover{
+        background-color: #E52713;
+        div {
+          color: #E52713;
+        }
       }
     }
   }
@@ -224,7 +283,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 183px;
+  margin-bottom: 50px;
+  margin-top: -40px;
   
   &__li {
     opacity: 0;
@@ -262,11 +322,12 @@
 
 .btns-circle {
   position: absolute;
-  top: 655px;
-  left: 42.2%;
+  top: 513px;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(-48%);
   
   
   &__btn-prev {

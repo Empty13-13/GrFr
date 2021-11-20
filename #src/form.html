@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+@@include('_head.html',{
+"title":"Form"
+})
+<body>
+<div class="wrapper">
+  @@include('_header.html',{})
+  <main class="page">
+
+    <div class="instruments">
+      <div class="instruments__content _container">
+        <div class="instruments__body">
+          <form action="#" class="instruments__form form-instruments">
+            <div class="form-instruments__body">
+              <div class="form-instruments__sex sex">
+                <div class="form_radio">
+                  <input id="radio-1" autocomplete="off" type="radio" name="form[]" data-value=""
+                         class="input sex__radio"/>
+                  <label for="radio-1">
+                    Herr
+                  </label>
+                </div>
+                <div class="form_radio">
+                  <input checked id="radio-2" autocomplete="off" type="radio" name="form[]" data-value=""
+                         class="input sex__radio"/>
+
+                  <label for="radio-2">
+                    Frau
+                  </label>
+                </div>
+              </div>
+              <p class="form-instruments__required">*Pflichtfelder</p>
+              <div class="form-instruments__column">
+                <input autocomplete="off" type="text" name="form[]" data-value="Vorname*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="Nachname*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="Kundennr"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="UNTERNEHMEN*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="E-mail*"
+                       class="input form-instruments__input"/>
+                <input autocomplete="off" type="text" name="form[]" data-value="Telefon*"
+                       class="input form-instruments__input"/>
+                <div class="form-instruments__check">
+                  <p class="form-instruments__text-check">Rückruf bestellen</p>
+                  <div class="form-instruments__checkbox"></div>
+                  <input id="checkboxInstruments" autocomplete="off" type="hidden" name=""
+                         class="input form-instruments__input"/>
+                </div>
+
+                <select id="select1">
+                  <option value="Ersatzteile">Ersatzteile</option>
+                  <option value="Retouren">Retouren</option>
+                  <option value="Wartung">Wartung</option>
+                  <option value="Reparatur">Reparatur</option>
+                  <option value="Rechnung">Rechnung</option>
+                  <option value="Reparatur vor Ort">Reparatur vor Ort</option>
+                </select>
+
+              </div>
+              <div class="form-instruments__column">
+                <textarea autocomplete="off" type="text" name="form[]"
+                          data-value="Bitte geben Sie hier den Text Ihrer Mitteilung ein:"
+                          class="input form-instruments__textarea"></textarea>
+                <p class="form-instruments__description">Mit dem Absenden Ihrer Anfrage erklären Sie sich mit der
+                                                         Verarbeitung Ihrer angegebenen Daten ausschliesslich zum Zweck
+                                                         der Bearbeitung Ihrer Anfrage durch KDT AG
+                                                         einverstanden.</p>
+                <button class="form-instruments__btn">Senden</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="downloadGroup">
+          <div class="downloadGroup__title">Download</div>
+          <div class="downloadGroup__body">
+            <a href="#" class="downloadGroup__block block-downloadGroup">
+              <div class="block-downloadGroup__body">
+                <div class="block-downloadGroup__img">
+                  <img class="doc" src="img/instruments/doc.jpg" alt="">
+                  <img class="textdoc" src="img/instruments/textdoc.jpg" alt="">
+                </div>
+                <p class="block-downloadGroup__description">Retourenschein</p>
+              </div>
+            </a>
+            <a href="#" class="downloadGroup__block block-downloadGroup">
+              <div class="block-downloadGroup__body">
+                <div class="block-downloadGroup__img">
+                  <img class="doc" src="img/instruments/doc.jpg" alt="">
+                  <img class="textdoc" src="img/instruments/textdoc.jpg" alt="">
+                </div>
+                <p class="block-downloadGroup__description">Retourenschein</p>
+              </div>
+            </a>
+            <a href="#" class="downloadGroup__block block-downloadGroup">
+              <div class="block-downloadGroup__body">
+                <div class="block-downloadGroup__img">
+                  <img class="doc" src="img/instruments/doc.jpg" alt="">
+                  <img class="textdoc" src="img/instruments/textdoc.jpg" alt="">
+                </div>
+                <p class="block-downloadGroup__description">Retourenschein</p>
+              </div>
+            </a>
+          </div>
+          <div class="downloadGroup__back _whiteBack">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  @@include('_footer.html',{})
+</div>
+@@include('_js.html',{})
+</body>
+</html>

@@ -285,6 +285,7 @@ if (link) {
 		for (let index = 0; index < blocks.length; index++) {
 			let block = blocks[index];
 			let block_item = document.querySelector('.' + block);
+
 			if (block_item) {
 				let block_offset = offset(block_item).top;
 				let block_height = block_item.offsetHeight;
@@ -378,8 +379,8 @@ function fix_block(scr_fix_block, scr_value) {
 		if (!block_width) { block_width = 0; }
 		if (window_width > block_width) {
 			if (item.offsetHeight < window_height - (header_height + 30)) {
-				if (scr_value > offset(block).top - (header_height + 15)) {
-					item.style.cssText = "position:fixed;bottom:auto;top:" + header_height + "px;width:" + block.offsetWidth + "px;left:" + offset(block).left + "px;";
+				if (scr_value > offset(block).top - 30) {
+					item.style.cssText = "position:fixed;bottom:auto;top:" + 30 + "px;width:" + block.offsetWidth + "px;left:" + offset(block).left + "px;";
 				} else {
 					gotoRelative(item);
 				}

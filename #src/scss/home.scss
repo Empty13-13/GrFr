@@ -80,7 +80,11 @@
     max-width: 430px;
     margin-bottom: 317px;
     position: relative;
+    word-spacing: 9999999px;
+  
     
+  
+  
     @media (max-width:$md3+px){
       margin-bottom: 250px;
     }
@@ -145,9 +149,13 @@
 
 //region advantages
 .advantages {
-  transform: translateY(-30%);
+  transform: translateY(-35%);
   position: relative;
   z-index: 3;
+  
+  @media (max-width:$md4+px){
+    transform: translateY(-20%);
+  }
   
   &__content {
   }
@@ -242,6 +250,7 @@
     position: relative;
     display: inline-flex;
     flex-direction: column;
+    color: $mainColor;
     
     &._product {
       @media (max-width:$md4+px){
@@ -316,7 +325,8 @@
 
 //region POW
 .POW {
-  margin-bottom: 200px;
+  margin-bottom: 70px;
+  margin-top: -90px;
   
   &__content {
   }
@@ -328,7 +338,11 @@
     line-height: 130%;
     color: #000000;
     max-width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: -15px;
+    
+    @media (max-width:838px){
+      margin-bottom: 20px;
+    }
   }
   
   &__body {
@@ -450,10 +464,10 @@
 
 //region Brands
 .brands {
-  margin-bottom: 230px;
+  margin-bottom: 50px;
   
   &__title {
-    margin-bottom: 89px;
+    margin-bottom: -60px;
     max-width: 210px;
   }
   
@@ -464,6 +478,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 0;
+    max-width: 100%;
   }
   
   &__slider-arrow {
@@ -488,6 +504,8 @@
   
   &__slider {
     padding: 100px 0;
+    max-width: 100%;
+    overflow: hidden;
   }
   
 }
